@@ -1,0 +1,64 @@
+.addedClass {
+  color: blue;
+}
+
+.bigdiv {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+textarea {
+  margin-top: 10px;
+}
+
+.form-control {
+  margin-top: 20px;
+  box-shadow: 10px 14px 20px 0px #6d7c96;
+  background-color: #cbdde6;
+}
+
+#addHere {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+
+}
+
+.newitemclass ,
+   .newitemclass2 {
+  font-family: 'Spectral SC', serif;
+}
+
+.newitemclass {
+
+    border-style: groove;
+    padding-left: 10px;
+    margin-left: 30px;
+    height: 106px;
+    width: 316px;
+    padding-top: 17px;
+
+
+
+}
+
+.newitemclass2 {
+    font-size: 14px;
+    text-align: center;
+}
+.fa-commenting {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 20px;
+}
