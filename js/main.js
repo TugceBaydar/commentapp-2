@@ -266,10 +266,6 @@ var userss = [
   {
     name: 'tugce',
     image: 'img/tugce.jpg'
-  },
-  {
-    name:'evan',
-    image:'img/evan.png'
   }
 ]
 
