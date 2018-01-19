@@ -260,17 +260,38 @@
 
 // ------------video 6---------
 
+// guessing game
 
+// this.name turn it into an array
+// horoscope redesign it!
+// dowloand node.js
+// start vue.js
+// look up for loading templates
 
 var userss = [
   {
-    name: 'tugce',
+    name: 'Tugce Baydar',
     image: 'img/tugce.jpg'
+  },
+  {
+    name:'Marcus Del Bianco',
+    image: 'img/marcus.png'
+  },
+  {
+    name:'Evan Winston',
+    image: 'img/evan.png'
   }
 ]
 
+var enterK = document.getElementById('comment');
+enterK.addEventListener('keypress', function enterKey(e) {
+  if(e.keyCode == 13) {
+    addComment();
+  }
+}, false) ;
 
-function addComment() {
+
+  function addComment() {
 
 
 
@@ -279,14 +300,28 @@ function addComment() {
    var x = name + " " + comment
 
    console.log(x)
+   console.log('addComment functionnnnn')
 
    var text = document.createTextNode(comment)
    var newItem = document.createElement('h1')
    var text2 = document.createTextNode("Commented by " + name)
    var newItem2 = document.createElement('h2')
    var newImg = document.createElement('img')
+   var butn = document.createElement('div')
+   butn.innerHTML = '<button type="button" onclick="deleteCnt()" class="btn-lg btn-primary">Clear</button>'
+   butn.setAttribute('style','margin-bottom:20px; margin-top:10px;')
+     console.log('appendddd')
 
 
+
+   // butn.className = 'btn-lg btn-primary'
+   // butn.type = 'button'
+   // butn.id='btnClear'
+   // butn.textContent = 'Clear comment'
+
+
+
+      console.log('appendddd')
 
    //---------------------------------------------------
 
@@ -297,13 +332,15 @@ function addComment() {
      for(var i=0; i < userss.length; i++) {
        var isSuccess = false
 
-          if( name.toLowerCase() == userss[i].name.toLowerCase()  ) {
+          if( name.toLowerCase() == userss[i].name.toLowerCase() ) {
             newImg.src = userss[i].image
             newImg.setAttribute('style', 'object-fit:cover;')
-            console.log(userss[i].image + userss[i].name)
+            console.log(userss[i].image + userss[i].name[i])
             isSuccess = true
             break
-          }else {
+               console.log('loooppp')
+          }
+          else {
             isSuccess = false
           }
 
@@ -313,19 +350,40 @@ function addComment() {
         }
 
 // --------------------------
-   addHere.appendChild(newImg)
+
+ document.getElementById('addHere').appendChild(newImg)
+
    newImg.width = '60'
    newImg.height = '60'
 
+     console.log('fuckinnggggg')
+
+
    newItem.appendChild(text)
    newItem2.appendChild(text2)
+
    document.getElementById('addHere').appendChild(newItem)
    document.getElementById('addHere').appendChild(newItem2)
+   document.getElementById('addHere').appendChild(butn)
 
 
    newItem.className = "newitemclass"
    newItem2.className = "newitemclass2"
 
+   butn.addEventListener('click', deleteCnt, false)
 
+ //
+ // .......................delete function.............
 
- }
+       function deleteCnt() {
+
+        console.log('delete functionnnnn!!')
+
+        document.getElementById('addHere').removeChild(newImg)
+        document.getElementById('addHere').removeChild(newItem)
+        document.getElementById('addHere').removeChild(newItem2)
+        document.getElementById('addHere').removeChild(butn)
+      }
+
+      // ......................................
+}
