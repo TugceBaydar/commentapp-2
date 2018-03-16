@@ -311,7 +311,7 @@ enterK.addEventListener('keypress', function enterKey(e) {
    var newItem2 = document.createElement('h2')
    var newImg = document.createElement('img')
    var butn = document.createElement('div')
-   butn.innerHTML = '<button type="button" onclick="deleteCnt()" class="btn-lg btn-primary" style="border-color:#a7a207; background-color:#a7a207;">Clear</button>'
+   butn.innerHTML = '<button type="button" onclick="deleteCnt()" class="btn-lg btn-primary" style="border-color:#a7a20791; background-color:#a7a20791; margin-left:250px">Clear</button>'
    butn.setAttribute('style','margin-bottom:20px; margin-top:10px; border-color:#1e78d899')
      console.log('appendddd')
 

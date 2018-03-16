@@ -1,5 +1,5 @@
 body {
-  background: url(../img/bgg.jpg) center no-repeat fixed;
+  background: url(../img/bgbg.jpg) center no-repeat fixed;
   background-size: cover;
 }
 
@@ -34,6 +34,7 @@ textarea {
   width: 600px;
   margin: 0 auto;
 
+
 }
 
 .newitemclass ,
@@ -49,6 +50,7 @@ textarea {
     height: 106px;
     width: 316px;
     padding-top: 17px;
+    color: #00000096;
 
 
 
