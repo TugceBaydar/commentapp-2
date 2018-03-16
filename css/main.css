@@ -63,11 +63,11 @@ textarea {
 .fa-commenting {
   display: inline-block;
   padding-right: 5px;
-  color:white;
+  color:black;
 }
 
 h1 {
   display: inline-block;
   font-size: 20px;
-  color: #fff9;
+  color: black;
 }
