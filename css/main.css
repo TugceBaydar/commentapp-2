@@ -1,3 +1,8 @@
+body {
+  background: url(../img/bgg.jpg) center no-repeat fixed;
+  background-size: cover;
+}
+
 .addedClass {
   color: blue;
 }
@@ -56,9 +61,11 @@ textarea {
 .fa-commenting {
   display: inline-block;
   padding-right: 5px;
+  color:white;
 }
 
 h1 {
   display: inline-block;
   font-size: 20px;
+  color: #fff9;
 }
