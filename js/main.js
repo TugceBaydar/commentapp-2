@@ -356,7 +356,7 @@ enterK.addEventListener('keypress', function enterKey(e) {
 
  document.getElementById('addHere').appendChild(newImg)
 
-   newImg.width = '60'
+   newImg.width = '70'
    newImg.height = '60'
 
      console.log('fuckinnggggg')
